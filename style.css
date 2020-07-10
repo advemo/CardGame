@@ -1,98 +1,83 @@
-@media(min-width:468px){
-  
- 
-     
-    .container{
-        display:flex;
-        flex-wrap:wrap;
-       justify-content:space-between;
-        
-        }
-     
-        .container-header{
-            display:flex;
-            flex-wrap:wrap;
-           /* justify-content:space-between; */
-            
-            }
- }
-
-
- #main-header{
-	background-color: rgb(0, 140, 255);
-    color: #fff;
-    height: 160px;
+@media (min-width: 468px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container-header {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+  }
 }
 
-
- .select-game{
-    font-size: 25px;
- }
- .play{
-    font-size: 20px;
- }
- .reset{
-    font-size: 20px;
- }
-
-body{
-	background-color:#575555;
-	color: #575555;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	line-height: 1.6em;
-	margin: 0;
+#main-header {
+  background-color: rgb(0, 140, 255);
+  color: #fff;
+  height: 160px;
 }
 
-.container{
-	width: 90%;
-	margin: 10px;
-	overflow: hidden;
+.select-game {
+  font-size: 25px;
+}
+.play {
+  font-size: 20px;
+}
+.reset {
+  font-size: 20px;
 }
 
-    
-   .Tier1 div, .Tier2 div, .Tier3 div{
-       border:3px #ccc solid;
-       padding:5px
-     }
- 
-   
-   .box-1{
-    flex-basis:20%;
-    background-color: #fff;
-   }
-   
-   .box-2{
-    flex-basis:20%;
-    background-color: #fff;
-   }
-   
-   .box-3{
-    flex-basis:20%;
-    background-color: #fff;
-   }
- 
- .container-2-box{
-   flex-basis:20%;
-   background-color: #fff;
-     
-   }
- 
+body {
+  background-color: #575555;
+  color: #575555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin: 0;
+}
 
-.Tier1, .Tier2, .Tier3{
-    visibility: hidden;
+.container {
+  width: 90%;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.Tier1 div,
+.Tier2 div,
+.Tier3 div {
+  border: 3px #ccc solid;
+  padding: 5px;
+}
+
+.box-1 {
+  flex-basis: 20%;
+  background-color: #fff;
+}
+
+.box-2 {
+  flex-basis: 20%;
+  background-color: #fff;
+}
+
+.box-3 {
+  flex-basis: 20%;
+  background-color: #fff;
+}
+
+.container-2-box {
+  flex-basis: 20%;
+  background-color: #fff;
+}
+
+.Tier1,
+.Tier2,
+.Tier3 {
+  visibility: hidden;
 }
 
 /* .images{
     visibility: hidden;
 } */
-
-
-
-
-
-
-
 
 /* #navbar{
 	background-color: #333;
