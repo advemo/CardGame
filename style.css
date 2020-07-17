@@ -4,164 +4,134 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .row2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 5px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .row3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .row4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .row5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .row6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-
-  .container-header {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content:space-between; */
-  }
-}
-#main-header {
-  background-color: rgb(0, 140, 255);
-  color: #fff;
-  height: 120px;
-  margin-top: 0px;
-}
-
-#box1 {
-  display: flex;
-  align-items: center;
-}
-
-.tier1 div,
-.tier2 div,
-.tier3 div {
-  display: flex;
-}
-
-/* GAME CONTROLS */
-#header-title {
-  background-color: rgb(0, 140, 255);
-  color: #fff;
-  font-size: 45px;
-}
-
-.select-game {
-  font-size: 28px;
-}
-.play {
-  font-size: 25px;
-}
-.reset {
-  font-size: 25px;
 }
 
 body {
-  background-color: #4ba6cf;
+  background-color: #c8cdcf;
   color: #575555;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 1.6em;
-  margin: 0;
+  text-align: center;
 }
 
-/* .picBox {
-  flex-basis: 20%;
-  background-color: #fff;
-}  */
+#header-title {
+  color: #4caf91;
+  font-size: 60px;
+  text-align:center;
+  margin-top: auto;
+  margin-bottom: 30px;
+  
+}
 
-.Tier1,
-.Tier2,
-.Tier3 {
+#main-header {
+  /* background-color: rgb(0, 140, 255); */
+  height: 160px;
+  margin-top: auto;
+  text-align: center;
+  background-color: #7a7979;
+  background-position: center;
+}
+
+#game-controls{
+  text-align: center;
+
+}
+
+/* GAME CONTROLS */
+
+
+.selector {
+  font-size: 20px;
+  border-radius: 4px;
+}
+.start-button {
+  background-color: #4caf91; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 4px;
+}
+.reset-button {
+  background-color: #4caf91; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+
+.tier-1,
+.tier-2,
+.tier-3 {
   visibility: hidden;
 }
 
 .h2{
- visibility: hidden;
- display: flex;
- font-size: xx-large;
- text-align: center;
-
+visibility: hidden;
+margin-top: 120px;
+font-size: xx-large;
+text-align: center;
 }
-/* .row1 div,
-.row2 div,
-.row3 div,
-.row4 div,
-.row5 div,
-.row6 div {
-  width: 60%;
-  margin: 10px;
-  overflow: hidden;
-}
-
-.Tier1 div,
-.Tier2 div,
-.Tier3 div {
-  border: 3px #ccc solid;
-  padding: 10px;
-}
-
-/* .box-1 {
-  flex-basis: 20%;
-  background-color: #fff;
-}
-
-.box-2 {
-  flex-basis: 20%;
-  background-color: #fff;
-}
-
-.box-3 {
-  flex-basis: 20%;
-  background-color: #fff;
-} */
-
-/* .container-2-box {
-  flex-basis: 20%;
-  background-color: #fff;
-} */

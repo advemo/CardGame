@@ -3,14 +3,26 @@ var buttonReset = document.getElementById("reset");
 var tier1 = document.getElementById("Tier1");
 var tier2 = document.getElementById("Tier2");
 var tier3 = document.getElementById("Tier3");
-var h2 = document.getElementsByClassName("h2");
 
-// var pic1 = document.getElementById('pic1');
-// var pic2 = document.getElementById('pic2');
-// var pic3 = document.getElementById('pic3');
-// var pic4 = document.getElementById('pic4');
-// var pic5 = document.getElementById('pic5');
-// var pic6 = document.getElementById('pic6');
+
+// var img2 = document.getElementById("pic2");
+// var img3 = document.getElementById("pic3");
+// var img4 = document.getElementById("pic4");
+// var img5 = document.getElementById("pic5");
+// var img6 = document.getElementById("pic6");
+// var img7 = document.getElementById("pic7");
+// var img8 = document.getElementById("pic8");
+// var img9 = document.getElementById("pic9");
+// var img10 = document.getElementById("pic10");
+// var img11 = document.getElementById("pic11");
+// var img12 = document.getElementById("pic12");
+// var img13 = document.getElementById("pic13");
+// var img14 = document.getElementById("pic14");
+// var img15 = document.getElementById("pic15");
+// var img16 = document.getElementById("pic16");
+// var img17 = document.getElementById("pic17");
+// var img18 = document.getElementById("pic18");
+
 
 var Img1Count;
 var Img2Count;
@@ -23,6 +35,7 @@ buttonPlay.addEventListener("click", showCards);
 buttonReset.addEventListener("click", hideCards);
 
 // DISPLAY CARDS AFTER SHOSSING LEVEL
+
 
 function showCards(e) {
   e.preventDefault();
@@ -47,6 +60,7 @@ function showCards(e) {
 
 
 // RESET GAME
+
 function hideCards(e) {
   e.preventDefault();
 
@@ -54,20 +68,29 @@ function hideCards(e) {
    tier2.style.visibility = "hidden";
    tier3.style.visibility = "hidden";
 
-  var images = document.getElementsByClassName("images");
+  var images = document.querySelector('#images');
   
-  // images.forEach(element => images.src = "img/Init.jpg");
+ for (let i = 0; i < document.images.length; i++) {
+  document.images[i].src = "img/Init.jpg";   
+ }
+
+  // images.forEach(element => images.src = );
   
-  images.src = "img/Init.jpg"; 
-  console.log(images);
+  // //images.src = "img/Init.jpg"; 
+  console.log(document.images.length);
   document.getElementById("select-game").value = "0";
 }
+
+
+//document.getElementById("pic1").addEventListener("click", toggleImage('pic1', 'img/1.jpg'));
+
 
 //SHOW IMAGE AND COMPARE WITH SECOND IMAGE
 function toggleImage(ImgName, NewImg) {
   var resetImage = "img/Init.jpg";
   var imgElement = document.getElementById(ImgName);
   imgElement.src = NewImg;
+
 
   if (Img1Count) {
     Img2Count = document.getElementById(ImgName).src;
@@ -92,9 +115,14 @@ function toggleImage(ImgName, NewImg) {
       tier1.style.visibility = "hidden";
      tier2.style.visibility = "hidden";
      tier3.style.visibility = "hidden";
-     window.alert("Congrats you Won!!!")    
-    }
+     completedGame = document.getElementsByClassName(h2);
+     console.log(completedGame);
+     completedGame.visibility = "display";
+     completedGame.display = "block";
+    window.alert("Congrats you Won!!!")
 
+    }
+   
     }
   } else {
     Img1Count = document.getElementById(ImgName).src;
