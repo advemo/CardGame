@@ -1,122 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PictGame</title>
+	<title>Brain Game</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-  <!-- SELECT CARDS TO PLAY -->
-    <header id="main-header" class="bg-success text-white p-4 mb-3">
+  <!-- HEADER SECTION -->
+
+    <header id="main-header">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-                <h1 id="header-title">PictGame</h1>
+            <div class="header">
+                <h1 id="header-title" >Brain Game</h1>
             </div>
-            <div class="col-md-6 align-self-center">
-                <button id="play" class="play" ><img src="img/playButton.jpg" /></button>
-                <!-- <input type="button" value="PLAY" class="play" id="play"> -->
-                <select id="select-game"  class="select-game">
-                    <option value="0">Please Select</option>
+          </div>
+            <div class="game-controls">
+                <button id="play" class="start-button">START</button>
+            
+                <select id="select-game"  class="selector">
+                    <option value="0">PLEASE SELECT</option>
                     <option value="1">Play with 6 card</option>
                     <option value="2">Play with 12 card</option>
                     <option value="3">Play with 18 card</option>
                 </select>
-                <button id="reset" class="reset" ><img src="img/resetButton.jpg" /></button>
+
+                <button id="reset" class="reset-button">RESET</button>
             </div>
-          </div>
         </div>
       </header>
 
-
 <!-- PLAYING WITH 6 CARSD -->
 
-<div class="Tier1" id="Tier1">
-   <div class="row1">
-    <div id="box-1" class="box-1">
+<div class="tier-1" id="Tier1" >
+   <div class="row1" id="container1">
+    <div id="box-1" class="picBox">
       <img id="pic1" visibility= "hidden"; class="images" 
       width="150" src="img/Init.jpg" onclick="toggleImage('pic1', 'img/1.jpg')"></img>
     </div>
-    <div id="box-2" class="box-2">
+    <div id="box-2" class="picBox">
         <img id="pic2" visibility= "hidden" class="images" 
         width="150" src="img/Init.jpg" onclick="toggleImage('pic2', 'img/2.jpg')"></img>
     </div>
-    <div id="box-3" class="box-3">
+    <div id="box-3" class="picBox">
         <img id="pic3" visibility= "hidden" class="images" 
         width="150" src="img/Init.jpg"  onclick="toggleImage('pic3', 'img/3.jpg')"></img>
     </div>
 </div>
   
-  <div class="row2">
-    <div class="container-2-box">
-        <img id="pic4" visibility= "hidden" class="images" 
+  <div class="row2" id="container2">
+    <div id="box-4" class="picBox">
+      <img id="pic4" visibility= "hidden" class="images" 
         width="150" src="img/Init.jpg"  onclick="toggleImage('pic4', 'img/2.jpg')"></img>
     </div>
-    <div class="container-2-box">
-        <img id="pic5" visibility= "hidden" class="images" 
+    <div id="box-5" class="picBox">
+      <img id="pic5" visibility= "hidden" class="images" 
         width="150" src="img/Init.jpg"  onclick="toggleImage('pic5', 'img/3.jpg')"></img>
     </div>
-    <div class="container-2-box">
-        <img id="pic6" visibility= "hidden" class="images" 
+    <div id="box-6" class="picBox">
+      <img id="pic6" visibility= "hidden" class="images" 
         width="150" src="img/Init.jpg"  onclick="toggleImage('pic6', 'img/1.jpg')"></img>
     </div>
   </div>
 </div>   
 
-
 <!-- PLAYING WITH 12 CARSD -->
-<!-- <div class="Tier2" id="Tier2">
-  <div class="row3">
-    <div class="container-2-box" background-color="gray">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-  </div>
 
-  <div class="row4">
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
+<div class="tier-2" id="Tier2" style.visivility= "hidden">
+  <div class="row3" id="container3">
+  <div id="box-7" class="picBox">
+    <img id="pic7" class="images" 
+    width="150" src="img/Init.jpg"  onclick="toggleImage('pic7', 'img/4.jpg')"></img>
+</div>
+<div id="box-8" class="picBox">
+  <img id="pic8" class="images" 
+    width="150" src="img/Init.jpg"  onclick="toggleImage('pic8', 'img/6.jpg')"></img>
+</div>
+<div id="box-9" class="picBox">
+  <img id="pic9" class="images" 
+    width="150" src="img/Init.jpg"  onclick="toggleImage('pic9', 'img/5.jpg')"></img>
+</div>
+</div>
+  
+  <div class="row4" id="container4">
+    <div id="box-10" class="picBox">
+      <img id="pic10" class="images" 
+      width="150" src="img/Init.jpg"  onclick="toggleImage('pic10', 'img/6.jpg')"></img>
   </div>
-</div> -->
+  <div id="box-11" class="picBox">
+      <img id="pic11" class="images" 
+      width="150" src="img/Init.jpg"  onclick="toggleImage('pic11', 'img/5.jpg')"></img>
+  </div>
+  <div id="box-12" class="picBox">
+      <img id="pic12" class="images" 
+      width="150" src="img/Init.jpg"  onclick="toggleImage('pic12', 'img/4.jpg')"></img>
+  </div>
+</div> 
+</div>
 
 <!-- PLAYING WITH 18 CARSD -->
-<!-- <div class="Tier3" id="Tier3">
-  <div class="row5">
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
+
+ <div class="tier-3" id="Tier3" style.visivility= "hidden">
+  <div class="row5" id="container5">
+    <div id="box-13" class="picBox">
+      <img id="pic13" class="images" 
+      width="150" src="img/Init.jpg"  onclick="toggleImage('pic13', 'img/7.jpg')"></img>
+  </div>
+  <div id="box-14" class="picBox">
+      <img id="pic14" class="images" 
+      width="150" src="img/Init.jpg"  onclick="toggleImage('pic14', 'img/9.jpg')"></img>
+  </div>
+  <div id="box-15" class="picBox">
+      <img id="pic15" class="images" 
+      width="150" src="img/Init.jpg"  onclick="toggleImage('pic15', 'img/8.jpg')"></img>
+  </div>
   </div>
 
-<div class="row6">
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
-    <div class="container-2-box">
-        <img width="150" class="images" src="img/Init.jpg"></img>
-    </div>
+<div class="row6" id="container6">
+  <div id="box-16" class="picBox">
+    <img id="pic16" class="images" 
+    width="150" src="img/Init.jpg"  onclick="toggleImage('pic16', 'img/9.jpg')"></img>
+</div>
+<div id="box-17" class="picBox">
+    <img id="pic17" class="images" 
+    width="150" src="img/Init.jpg"  onclick="toggleImage('pic17', 'img/7.jpg')"></img>
+</div>
+<div id="box-18" class="picBox">
+    <img id="pic18" class="images" 
+    width="150" src="img/Init.jpg"  onclick="toggleImage('pic18', 'img/8.jpg')"></img>
+</div>
   </div>
-</div> -->
+</div>
 
 <script  src="./script.js"></script>
 
